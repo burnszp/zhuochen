@@ -1,0 +1,132 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    -webkit-tap-highlight-color: transparent;/*清除点击默认的高亮效果*/
+
+    -webkit-box-sizing: border-box;/*以你的border开始计算你的宽度*/
+
+}
+
+body{
+    font-size: 14px;
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+@font-face {
+    font-family: 'itcast';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: itcast;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover,a:active{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;/*清除选中效果*/
+
+    -webkit-appearance: none;/*清楚浏览器默认的样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.w{
+    width: 900px;
+    margin:0 auto;
+}
+.row{
+    margin:0 auto;
+}
+.footer{
+    background-color: #1416FF;
+    height: 200px;
+}
+header{
+    height: 120px;
+}
+header .logo a{
+    display:inline-block;
+    width: 100%;
+}
+header .logo a img{
+    width: 100%;
+    height: 100px;
+}
+header .logo a span{
+    display: block;
+    position: relative;
+    top:0;left:-999999px;
+}
+header .name span{
+    display:inline-block;
+    font-size:25px;
+    font-weight: 700;
+    line-height: 100px;
+    color:#1416FF;
+}
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: #1416FF;
+}
+nav>ul{
+    width: 100%;
+    height: 40px;
+}
+nav>ul>li {
+    float:left;
+    text-align: center;
+    line-height: 40px;
+    font-size:18px;
+    color:#0C0846;
+    font-weight:500;
+}
+nav>ul>li>a{
+    display:block;
+    width: 100%;
+    height: 40px;
+}
+nav>ul>li>a:hover{
+    background-color: #3EFCEA;
+    color:#0C0846;
+    border-bottom: 1px solid #1416FF;
+}
+nav>ul>li .dd{
+    background-color: #3EFCEA;
+    position: relative;
+    display:none;
+}
+nav>ul>li .dd li{
+    border-bottom:1px solid #1416FF;
+}
+nav>ul>li .dd li:last-child{
+    border-bottom:0;
+}
+nav>ul>li .dd li a{
+    display:block;
+    width: 100%;
+}

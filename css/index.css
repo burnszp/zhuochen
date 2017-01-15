@@ -1,0 +1,37 @@
+.danner ul{
+    width: 100%;
+}
+.content{
+    margin-top:50px;
+}
+.content ul.row{
+}
+.content ul.row>li{
+    border:2px solid #1416FF;
+    border-radius:10px;
+    margin-right:75px;
+    margin-bottom:30px;
+    padding:0;
+}
+.content ul.row>li h4{
+    color:#28a4c9;
+    line-height:40px;
+    border-bottom:2px dashed #28a4c9;
+    display: block;
+    padding-left: 10px;
+}
+.content ul.row>li ul li{
+   line-height:30px;
+    border-bottom:1px dashed #888;
+    font-size:16px;
+    padding-left:10px;
+}
+.content ul.row>li ul li:last-child{
+border-bottom: 0;
+}
+.content ul.row>li ul li span{
+    float: right;
+    padding-right:10px;
+    color:#888;
+}
+
